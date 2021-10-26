@@ -16,7 +16,7 @@
 ![](./images/passport_reader.png)
 ## GUI 讀/寫卡
 ### 步驟
-1. 安裝 JMRTD，安裝過程會有當機現象，直接退出即可
+1. 安裝 `jmrtd_installer-0.4.9.exe`，安裝過程會有當機現象，直接退出即可
 ![](./images/JMRTD_install.png)
 2. 預設安裝路徑為 `C:\Program Files\JMRTD`，打開 `jmrtd.bat`
 3. File -> New，建立新護照，並選擇 Tool -> Import Portrait 新增大頭照
