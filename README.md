@@ -1,6 +1,5 @@
 # ePassport
 - 此專案中 ePassportApplet、ePassportReader 皆以 `IntelliJ` 開發
-- Download Link: 
 ## ePassportApplet (寫卡)
 利用寫好的 Gradle Script 寫入 ePassport 。
 ![](./images/Gradle.png)
