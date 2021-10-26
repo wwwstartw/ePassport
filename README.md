@@ -12,6 +12,6 @@
 4. update_binary_DG1
 ![](./images/update_binary_DG1.png)
 ## ePassportReader (讀卡)
-直接執行 Main.java ，利用預設 BAC key 通過 BA C驗證，成功讀取 ePassport 。
+直接執行 Main.java ，利用預設 BAC key 通過 BAC 驗證，成功讀取 ePassport 。
 ![](./images/passport_reader.png)
 ## GUI 讀/寫卡
