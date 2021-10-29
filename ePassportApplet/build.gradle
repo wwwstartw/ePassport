@@ -97,5 +97,6 @@ javacard{
             scripts 'select', 'select_file_DG1'
 
         }
+
     }
 }

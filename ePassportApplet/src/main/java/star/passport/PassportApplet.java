@@ -762,6 +762,7 @@ public class PassportApplet extends Applet implements ISO7816 {
         short bufferOffset = protectedApdu ? passportCrypto.getApduBufferOffset(le)
                 : (short) 0;
         Util.arrayCopyNonAtomic(rnd, (short) 0, buffer, bufferOffset, le);
+
         volatileState[0] |= CHALLENGED;
 
         return le;
@@ -894,7 +895,7 @@ public class PassportApplet extends Applet implements ISO7816 {
         setNoChallenged();
         volatileState[0] |= MUTUAL_AUTHENTICATED;
 
-        return (short) (ciphertext_len + MAC_LENGTH + '*');
+        return (short) (ciphertext_len + MAC_LENGTH);
 
         }
     }
@@ -982,7 +983,6 @@ public class PassportApplet extends Applet implements ISO7816 {
         if (protectedApdu) {
             bufferOffset = passportCrypto.getApduBufferOffset(len);
         }
-
         Util.arrayCopyNonAtomic(file, offset, buffer, bufferOffset, len);
 
         return len;
