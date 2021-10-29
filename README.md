@@ -16,6 +16,7 @@
 ![](./images/passport_reader.png)
 ## ePassport Tool 讀/寫卡
 ### 步驟
+0. 必須先使用 ePassportApplet 執行 installJavaCard ，才可使用 ePassport Tool 寫護照
 1. 安裝 `jmrtd_installer-0.4.9.exe`，安裝過程會有當機現象，直接退出即可
 ![](./images/JMRTD_install.png)
 2. 預設安裝路徑為 `C:\Program Files\JMRTD`，打開 `jmrtd.bat`
