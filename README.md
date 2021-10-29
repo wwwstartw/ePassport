@@ -24,7 +24,7 @@
 4. Tools -> Upload passport，輸入 BAC Key，點擊 Upload 開始將護照寫入卡片
 ![](./images/JMRTD_upload.png)
     - 寫入成功 APDU trace 底端會是 `9000`
-      ![](./images/upload_ok_APDU.png)
+      - ![](./images/upload_ok_APDU.png)
     - 完成後可利用 ePassportReader 驗證是否成功
       ![](./images/verify_passport.png)
 6. 回到 JMRTD 主介面，選擇 Tools -> Reload Cards，輸入剛才的 BAC Key
