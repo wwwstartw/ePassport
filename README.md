@@ -37,3 +37,8 @@
         ```
         gp -delete A00000024710
         ```
+
+## lab_ePassportReader
+### v1
+- 按下讀取，即可讀取白卡中已寫好的護照資料，程式示意圖：
+  - ![](./images/lab_ePassportReader.png)

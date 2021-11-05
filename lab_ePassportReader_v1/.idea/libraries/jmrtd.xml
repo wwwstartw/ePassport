@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="jmrtd" type="repository">
+    <properties maven-id="org.jmrtd:jmrtd:0.7.5" />
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/jmrtd-0.7.5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/scuba-smartcards-0.0.18.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/bcprov-jdk15on-1.60.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/cert-cvc-1.4.6.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
