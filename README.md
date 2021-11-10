@@ -31,7 +31,7 @@
     - 寫入成功 APDU trace 底端會是 `9000`
       - ![](./images/upload_ok_APDU.png)
 5. 回到 JMRTD 主介面，選擇 Tools -> Reload Cards，輸入剛才的 BAC Key
-![](./images/JMRTD_reload.png)
+    - ![](./images/JMRTD_reload.png)
 6. 讀取護照成功
     - ![](./images/JMRTD_read_passport.png)
 7. 上傳護照後，put_mrz 的功能會被鎖上，所以若想上傳不同護照，需要先刪掉 applet 再利用 ePassportApplet 重新安裝 applet，最後在從第三步開始重做，否則會出現 `6985` error
@@ -39,6 +39,3 @@
         ```
         gp -delete A00000024710
         ```
-
-## lab_ePassportReader
-### v1
