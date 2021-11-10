@@ -103,7 +103,7 @@ public class Reader {
                     ex.printStackTrace();
                 }
                 document_number.setText(mrzInfo.getDocumentNumber());
-                name.setText(mrzInfo.getPrimaryIdentifier() + " " + mrzInfo.getSecondaryIdentifier().split("<")[0]);
+                name.setText(mrzInfo.getPrimaryIdentifier() + " " + mrzInfo.getSecondaryIdentifier().replace("<",""));
                 personal_number.setText(mrzInfo.getPersonalNumber());
                 birth_date.setText(mrzInfo.getDateOfBirth());
                 expiry_date.setText(mrzInfo.getDateOfExpiry());

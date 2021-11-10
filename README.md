@@ -12,8 +12,12 @@
 4. update_binary_DG1
 ![](./images/update_binary_DG1.png)
 ## ePassportReader (讀卡)
-直接執行 ePassportReader.java ，利用預設 BAC key 通過 BAC 驗證，成功讀取 ePassport: 
-![](./images/passport_reader.png)
+### 讀取白卡
+- 直接執行 ePassportReader.java ，點擊讀取按鈕，利用預設 BAC key 通過驗證，成功讀取 ePassport: 
+  - ![](./images/lab_ePassportReader.png)
+### 讀取真實護照
+- 直接執行 ePassportReader.java ，點擊讀取按鈕，利用預設 BAC key 通過驗證，成功讀取 ePassport: 
+  - ![](./images/passport_reader.png)
 ## ePassport Tool 讀/寫卡
 ### 步驟
 0. 必須先使用 ePassportApplet 執行 installJavaCard ，才可使用 ePassport Tool 寫護照
@@ -26,8 +30,6 @@
 ![](./images/JMRTD_upload.png)
     - 寫入成功 APDU trace 底端會是 `9000`
       - ![](./images/upload_ok_APDU.png)
-    - 完成後可利用 ePassportReader 驗證是否成功
-      ![](./images/verify_passport.png)
 5. 回到 JMRTD 主介面，選擇 Tools -> Reload Cards，輸入剛才的 BAC Key
 ![](./images/JMRTD_reload.png)
 6. 讀取護照成功
@@ -40,5 +42,3 @@
 
 ## lab_ePassportReader
 ### v1
-- 按下讀取，即可讀取白卡中已寫好的護照資料，程式示意圖：
-  - ![](./images/lab_ePassportReader.png)
