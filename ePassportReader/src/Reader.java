@@ -39,6 +39,9 @@ public class Reader {
     private JTextArea mrztext;
     private JLabel face;
     private JLabel tip;
+    private JTextField BAC_doc;
+    private JTextField BAC_birth;
+    private JTextField BAC_expiry;
 
     public class ePassportReader {
         static final int MAX_TRANSCEIVE_LENGTH = PassportService.NORMAL_MAX_TRANCEIVE_LENGTH;
@@ -48,25 +51,27 @@ public class Reader {
 
         public MRZInfo ReadCard(String[] args)throws CardServiceException, CardException, IOException {
             // do bac
-            BACKey bacKey = new BACKey("123456789","211026","221026");
-            CardTerminal terminal = TerminalFactory.getDefault().terminals().list().get(0);
-            CardService cs = CardService.getInstance(terminal);
-            PassportService ps = new PassportService(cs,MAX_TRANSCEIVE_LENGTH,
-                    MAX_BLOCK_SIZE,IS_SFI_ENABLED,SHOULD_CHECK_MAC);
-            ps.open();
-
-            ps.sendSelectApplet(false);
-            BACResult bacResult = ps.doBAC(bacKey);
-
-            // read mrzinfo
-            InputStream is = ps.getInputStream(PassportService.EF_DG1);
-            DG1File dg1 = (DG1File) LDSFileUtil.getLDSFile(PassportService.EF_DG1, is);
-            MRZInfo mrzInfo = dg1.getMRZInfo();
-
-            // read face image
-            InputStream is2 = ps.getInputStream(PassportService.EF_DG2);
-            DG2File dg2 = (DG2File) LDSFileUtil.getLDSFile(PassportService.EF_DG2, is2);
+            MRZInfo mrzInfo = null;
             try {
+                BACKey bacKey = new BACKey(BAC_doc.getText(),BAC_birth.getText(),BAC_expiry.getText());
+                CardTerminal terminal = TerminalFactory.getDefault().terminals().list().get(0);
+                CardService cs = CardService.getInstance(terminal);
+                PassportService ps = new PassportService(cs,MAX_TRANSCEIVE_LENGTH,
+                        MAX_BLOCK_SIZE,IS_SFI_ENABLED,SHOULD_CHECK_MAC);
+                ps.open();
+
+                ps.sendSelectApplet(false);
+                BACResult bacResult = ps.doBAC(bacKey);
+
+                // read mrzinfo
+                InputStream is = ps.getInputStream(PassportService.EF_DG1);
+                DG1File dg1 = (DG1File) LDSFileUtil.getLDSFile(PassportService.EF_DG1, is);
+                mrzInfo = dg1.getMRZInfo();
+
+                // read face image
+                InputStream is2 = ps.getInputStream(PassportService.EF_DG2);
+                DG2File dg2 = (DG2File) LDSFileUtil.getLDSFile(PassportService.EF_DG2, is2);
+
                 List<FaceInfo> faceInfos = dg2.getFaceInfos();
                 for (FaceInfo faceInfo: faceInfos) {
                     List<FaceImageInfo> faceImageInfos = faceInfo.getFaceImageInfos();
@@ -78,11 +83,14 @@ public class Reader {
                         face.setIcon(image);
                     }
                 }
+                ps.close();
             } catch (Exception e) {
-                e.printStackTrace();
+                if (e.getMessage().contains("6982")) {
+                    JOptionPane.showMessageDialog(null,"讀取失敗! 請確認BAC key是否正確或重新感應卡片!","Error",JOptionPane.WARNING_MESSAGE);
+                }else{
+                    JOptionPane.showMessageDialog(null,"讀取成功!");
+                }
             }
-
-            ps.close();
             return mrzInfo;
         }
     }
