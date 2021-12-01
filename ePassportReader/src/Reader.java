@@ -9,9 +9,10 @@ import java.awt.event.ActionListener;
 import java.awt.image.BufferedImage;
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
-import com.sun.imageio.plugins.common.ImageUtil;
 import net.sf.scuba.smartcards.CardService;
 import net.sf.scuba.smartcards.CardServiceException;
 import org.jmrtd.BACKey;
@@ -42,14 +43,45 @@ public class Reader {
     private JTextField BAC_doc;
     private JTextField BAC_birth;
     private JTextField BAC_expiry;
+    static Map<String, String> country_dict = new HashMap<String, String>();
 
-    public class ePassportReader {
+    public static void main(String[] args) {
+        JFrame frame = new JFrame("ePassport Reader");
+        frame.setContentPane(new Reader().Panel2);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.pack();
+        frame.setVisible(true);
+
+        country_dict.put("AUS", "Australia");
+        country_dict.put("BRA", "Brazil");
+        country_dict.put("CHN", "China");
+        country_dict.put("DEU", "Germany");
+        country_dict.put("ESP", "Spain");
+        country_dict.put("FRA", "France");
+        country_dict.put("GBR", "United Kingdom");
+        country_dict.put("HKG", "Hong Kong");
+        country_dict.put("IRL", "Ireland");
+        country_dict.put("JPN", "Japan");
+        country_dict.put("KEN", "Kenya");
+        country_dict.put("LTU", "Lithuania");
+        country_dict.put("MAC", "Macao");
+        country_dict.put("NLD", "Netherlands");
+        country_dict.put("POL", "Poland");
+        country_dict.put("REU", "Reunion");
+        country_dict.put("SGP", "Singapore");
+        country_dict.put("SWE", "Sweden");
+        country_dict.put("TWN", "Taiwan");
+        country_dict.put("USA", "United States");
+        country_dict.put("ZAF", "South Africa");
+    }
+
+    public class ReadMRZ {
         static final int MAX_TRANSCEIVE_LENGTH = PassportService.NORMAL_MAX_TRANCEIVE_LENGTH;
         static final int MAX_BLOCK_SIZE = PassportService.DEFAULT_MAX_BLOCKSIZE;
         static final boolean IS_SFI_ENABLED = false;
         static final boolean SHOULD_CHECK_MAC = false;
 
-        public MRZInfo ReadCard(String[] args)throws CardServiceException, CardException, IOException {
+        public MRZInfo ReadMRZ(String[] args)throws CardServiceException, CardException, IOException {
             // do bac
             MRZInfo mrzInfo = null;
             try {
@@ -99,10 +131,10 @@ public class Reader {
         read_button.addActionListener(new ActionListener() {
             String[] args = {};
             public void actionPerformed(ActionEvent e) {
-                ePassportReader Reader = new ePassportReader();
+                ReadMRZ Reader = new ReadMRZ();
                 MRZInfo mrzInfo = null;
                 try {
-                    mrzInfo = Reader.ReadCard(args);
+                    mrzInfo = Reader.ReadMRZ(args);
                 } catch (CardServiceException ex) {
                     ex.printStackTrace();
                 } catch (CardException ex) {
@@ -116,18 +148,10 @@ public class Reader {
                 birth_date.setText(mrzInfo.getDateOfBirth());
                 expiry_date.setText(mrzInfo.getDateOfExpiry());
                 gender.setText(String.valueOf(mrzInfo.getGender()));
-                nationality.setText(mrzInfo.getNationality());
-                issuing_state.setText(mrzInfo.getIssuingState());
+                nationality.setText(country_dict.get(mrzInfo.getNationality()));
+                issuing_state.setText(country_dict.get(mrzInfo.getIssuingState()));
                 mrztext.setText(String.valueOf(mrzInfo));
             }
         });
-    }
-
-    public static void main(String[] args) {
-        JFrame frame = new JFrame("ePassport Reader");
-        frame.setContentPane(new Reader().Panel2);
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.pack();
-        frame.setVisible(true);
     }
 }

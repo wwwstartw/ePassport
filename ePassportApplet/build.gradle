@@ -97,6 +97,10 @@ javacard{
             scripts 'select', 'select_file_DG1'
 
         }
+        task {
+            name 'create_passport'
+            scripts 'select', 'select_file_DG1'
 
+        }
     }
 }
