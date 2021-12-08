@@ -35,7 +35,8 @@
 6. 讀取護照成功
     - ![](./images/JMRTD_read_passport.png)
 7. 上傳護照後，put_mrz 的功能會被鎖上，所以若想上傳不同護照，需要先刪掉 applet 再利用 ePassportApplet 重新安裝 applet，最後在從第三步開始重做，否則會出現 `6985` error
-    - 刪除 passport applet:
+    - 刪除 passport applet (若出現無法刪除的情況，可加上 `-f` 嘗試):
         ```
         gp -delete A00000024710
         ```
+    

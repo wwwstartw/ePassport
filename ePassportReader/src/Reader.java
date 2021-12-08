@@ -1,17 +1,19 @@
-import javax.imageio.ImageIO;
 import javax.smartcardio.CardException;
 import javax.smartcardio.CardTerminal;
 import javax.smartcardio.TerminalFactory;
 import javax.swing.*;
+import javax.swing.filechooser.FileNameExtensionFilter;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.geom.AffineTransform;
 import java.awt.image.BufferedImage;
-import java.io.IOException;
-import java.io.InputStream;
-import java.util.HashMap;
+import java.awt.image.ColorModel;
+import java.awt.image.RenderedImage;
+import java.awt.image.WritableRaster;
+import java.io.*;
+import java.util.*;
 import java.util.List;
-import java.util.Map;
 
 import net.sf.scuba.smartcards.CardService;
 import net.sf.scuba.smartcards.CardServiceException;
@@ -24,6 +26,10 @@ import org.jmrtd.lds.icao.MRZInfo;
 import org.jmrtd.lds.iso19794.FaceImageInfo;
 import org.jmrtd.lds.iso19794.FaceInfo;
 import org.jmrtd.protocol.BACResult;
+import util.IconUtil;
+import util.ImageUtil;
+
+import static com.sun.javafx.iio.common.ImageTools.scaleImage;
 
 public class Reader {
     public JTextField document_number;
@@ -36,7 +42,7 @@ public class Reader {
     private JTextField nationality;
     private JTextField issuing_state;
     private JPanel Panel2;
-    public JPanel image;
+    public JPanel passport_image;
     private JTextArea mrztext;
     private JLabel face;
     private JLabel tip;
@@ -44,6 +50,7 @@ public class Reader {
     private JTextField BAC_birth;
     private JTextField BAC_expiry;
     static Map<String, String> country_dict = new HashMap<String, String>();
+    private ImagePreviewPanel displayPreviewPanel;
 
     public static void main(String[] args) {
         JFrame frame = new JFrame("ePassport Reader");
@@ -75,11 +82,40 @@ public class Reader {
         country_dict.put("ZAF", "South Africa");
     }
 
-    public class ReadMRZ {
+    public BufferedImage convertRenderedImage(RenderedImage img) {
+        if (img instanceof BufferedImage) {
+            return (BufferedImage)img;
+        }
+        ColorModel cm = img.getColorModel();
+        int width = img.getWidth();
+        int height = img.getHeight();
+        WritableRaster raster = cm.createCompatibleWritableRaster(width, height);
+        boolean isAlphaPremultiplied = cm.isAlphaPremultiplied();
+        Hashtable properties = new Hashtable();
+        String[] keys = img.getPropertyNames();
+        if (keys!=null) {
+            for (int i = 0; i < keys.length; i++) {
+                properties.put(keys[i], img.getProperty(keys[i]));
+            }
+        }
+        BufferedImage result = new BufferedImage(cm, raster, isAlphaPremultiplied, properties);
+        img.copyData(raster);
+        return result;
+    }
+
+    private double calculateScale(int desiredWidth, int desiredHeight, int actualWidth, int actualHeight) {
+        double xScale = (double)desiredWidth / (double)actualWidth;
+        double yScale = (double)desiredHeight / (double)actualHeight;
+        double scale = xScale < yScale ? xScale : yScale;
+        return scale;
+    }
+
+    public class ReadMRZ extends JPanel {
         static final int MAX_TRANSCEIVE_LENGTH = PassportService.NORMAL_MAX_TRANCEIVE_LENGTH;
         static final int MAX_BLOCK_SIZE = PassportService.DEFAULT_MAX_BLOCKSIZE;
         static final boolean IS_SFI_ENABLED = false;
         static final boolean SHOULD_CHECK_MAC = false;
+        private int width, height;
 
         public MRZInfo ReadMRZ(String[] args)throws CardServiceException, CardException, IOException {
             // do bac
@@ -100,19 +136,19 @@ public class Reader {
                 DG1File dg1 = (DG1File) LDSFileUtil.getLDSFile(PassportService.EF_DG1, is);
                 mrzInfo = dg1.getMRZInfo();
 
-                // read face image
+                // read face
                 InputStream is2 = ps.getInputStream(PassportService.EF_DG2);
                 DG2File dg2 = (DG2File) LDSFileUtil.getLDSFile(PassportService.EF_DG2, is2);
-
                 List<FaceInfo> faceInfos = dg2.getFaceInfos();
                 for (FaceInfo faceInfo: faceInfos) {
                     List<FaceImageInfo> faceImageInfos = faceInfo.getFaceImageInfos();
                     for (FaceImageInfo faceImageInfo: faceImageInfos) {
+                        String mimeType = faceImageInfo.getMimeType();
+                        int length = faceImageInfo.getImageLength();
                         InputStream inputStream = faceImageInfo.getImageInputStream();
-                        BufferedImage faceimage = ImageIO.read(inputStream);
-                        ImageIcon image = new ImageIcon(faceimage);
-                        image.setImage(image.getImage().getScaledInstance(150, 200, Image.SCALE_DEFAULT ));
-                        face.setIcon(image);
+                        BufferedImage image = ImageUtil.read(inputStream, length, mimeType);
+                        Image face_image = image.getScaledInstance(150, 200, Image.SCALE_DEFAULT);
+                        face.setIcon(new ImageIcon(face_image));
                     }
                 }
                 ps.close();
@@ -120,6 +156,7 @@ public class Reader {
                 if (e.getMessage().contains("6982")) {
                     JOptionPane.showMessageDialog(null,"讀取失敗! 請確認BAC key是否正確或重新感應卡片!","Error",JOptionPane.WARNING_MESSAGE);
                 }else{
+                    System.out.println(e);
                     JOptionPane.showMessageDialog(null,"讀取成功!");
                 }
             }

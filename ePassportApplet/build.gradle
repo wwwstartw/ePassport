@@ -71,6 +71,10 @@ javacard{
             name 'create_file_DG1'
             apdu '00e000000663040070010100'
         }
+        script{
+            name 'create_file_DG2'
+            apdu '00e000000663040070010200'
+        }
         task {
             name 'put_data_mrz'
             scripts 'select','putData_MRZ'
@@ -84,23 +88,38 @@ javacard{
             apdu '00a4000002010100'
         }
         script{
+            name 'select_file_DG2'
+            apdu '00a4000002010200'
+        }
+        script{
             name 'update_binary_DG1'
             apdu '00d600005f615d5f1f5a503C54574E413132333435363738343C3C3C3C3C3C3C3C3C3C3C3C3C3C3C393830393238314D3939303932383554574E3C3C3C3C3C3C3C3C3C3C3C3C537461723C4C693C3C3C3C3C3C3C3C3C3C3C3C3C3C3C3C3C3C3C3C3C3C3C'
         }
+        script{
+            name 'update_binary_DG2'
+            apdu '00D60000FF75825ACB7F61825AC60201017F60825ABEA10E81010282010087020101880200085F2E825AA9464143003031300000005AA9000100005A9B00000000000000000000000000000000000002900306000000000000FFD8FFE000104A46494600010200000100010000FFDB004300080606070605080707070909080A0C140D0C0B0B0C1912130F141D1A1F1E1D1A1C1C20242E2720222C231C1C2837292C30313434341F27393D38323C2E333432FFDB0043010909090C0B0C180D0D1832211C213232323232323232323232323232323232323232323232323232323232323232323232323232323232323232323232323232FFC00011080306029003012200'
+        }
+
         task {
             name 'update_binary_DG1'
             scripts 'select','select_file_DG1','update_binary_DG1'
         }
-
+        task {
+            name 'update_binary_DG2'
+            scripts 'select','select_file_DG2','update_binary_DG2'
+        }
         task {
             name 'select_file_dg1'
             scripts 'select', 'select_file_DG1'
 
         }
         task {
-            name 'create_passport'
-            scripts 'select', 'select_file_DG1'
-
+            name 'select_file_dg2'
+            scripts 'select', 'select_file_DG2'
+        }
+        task {
+            name 'create_file_2'
+            scripts 'select', 'create_file_DG2'
         }
     }
 }
