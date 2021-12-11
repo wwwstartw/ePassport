@@ -1,0 +1,102 @@
+buildscript{
+    repositories{
+        mavenCentral()
+        maven{url 'https://javacard.pro/maven'}
+        maven{url 'https://deadcode.me/mvn'}
+    }
+    dependencies{
+        classpath 'com.klinec:gradle-javacard:1.8.0'
+    }
+}
+
+plugins {
+    id 'java'
+}
+group 'star'
+version '1.0-SNAPSHOT'
+
+apply plugin:'com.klinec.gradle.javacard'
+apply plugin:'idea'
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+    maven{url 'https://javacard.pro/maven'}
+    maven{url 'https://deadcode.me/mvn'}
+    flatDir{
+        dirs 'libs'
+    }
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.6.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
+}
+
+test {
+    useJUnitPlatform()
+}
+
+final def sdk_dir = 'sdks/jc304_kit'
+javacard{
+    config{
+        jckit sdk_dir
+        debugGpPro true
+        cap{
+            packageName 'star.passport'
+            version '0.1'
+            aid '0xA0:0x00:0x00:0x02:0x47:0x10'
+            output 'applet.cap'
+            targetsdk sdk_dir
+            applet{
+                className 'star.passport.EvilPassportApplet'
+                aid '0xA0:0x00:0x00:0x02:0x47:0x10:0x01'
+            }
+        }
+    }
+    scripts {
+        script {
+            name 'select'
+            apdu '00a4040007a0000002471001'
+        }
+        script{
+            name 'testing'
+            apdu '00ff000000'
+        }
+        script {
+            name 'putData_MRZ'
+            apdu '00da00621d401bc009413132333435363738c106393930393232c206323231323331'
+        }
+        script{
+            name 'create_file_DG1'
+            apdu '00e000000663040070010100'
+        }
+        task {
+            name 'put_data_mrz'
+            scripts 'select','putData_MRZ'
+        }
+        task {
+            name 'create_file'
+            scripts 'select','create_file_DG1'
+        }
+        script{
+            name 'select_file_DG1'
+            apdu '00a4000002010100'
+        }
+        script{
+            name 'update_binary_DG1'
+            apdu '00d600005f615d5f1f5a503C54574E413132333435363738343C3C3C3C3C3C3C3C3C3C3C3C3C3C3C393930393232314D3232313233313554574E3C3C3C3C3C3C3C3C3C3C3C3C4A6F73683C4A693C3C3C3C3C3C3C3C3C3C3C3C3C3C3C3C3C3C3C3C3C3C3C'
+        }
+        task {
+            name 'update_binary_DG1'
+            scripts 'select','select_file_DG1','update_binary_DG1'
+        }
+
+        task {
+            name 'select_file_dg1'
+            scripts 'select', 'select_file_DG1'
+
+        }
+
+    }
+}
