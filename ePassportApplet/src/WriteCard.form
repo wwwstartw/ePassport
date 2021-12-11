@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="WriteCard">
+  <grid id="27dc6" binding="panel2" layout-manager="GridLayoutManager" row-count="12" column-count="9" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="20" y="20" width="687" height="549"/>
+    </constraints>
+    <properties>
+      <enabled value="true"/>
+      <font size="20"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <vspacer id="c2123">
+        <constraints>
+          <grid row="1" column="6" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </vspacer>
+      <vspacer id="fb0f2">
+        <constraints>
+          <grid row="2" column="6" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </vspacer>
+      <component id="f4d67" class="javax.swing.JTextField" binding="name">
+        <constraints>
+          <grid row="2" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <text value="Star Li"/>
+        </properties>
+      </component>
+      <component id="f2c84" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="3" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="身分證字號："/>
+        </properties>
+      </component>
+      <vspacer id="14dfd">
+        <constraints>
+          <grid row="3" column="6" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </vspacer>
+      <component id="6f0f2" class="javax.swing.JTextField" binding="personal_number">
+        <constraints>
+          <grid row="3" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <text value="A123456789"/>
+        </properties>
+      </component>
+      <component id="89ad1" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="6" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="生日："/>
+        </properties>
+      </component>
+      <vspacer id="f3304">
+        <constraints>
+          <grid row="6" column="6" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </vspacer>
+      <component id="c99ea" class="javax.swing.JTextField" binding="birth_date">
+        <constraints>
+          <grid row="6" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <text value="980928"/>
+        </properties>
+      </component>
+      <component id="1e14e" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="7" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="護照到期日："/>
+        </properties>
+      </component>
+      <vspacer id="531ea">
+        <constraints>
+          <grid row="7" column="6" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </vspacer>
+      <component id="537ea" class="javax.swing.JTextField" binding="expiry_date">
+        <constraints>
+          <grid row="7" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <text value="990928"/>
+        </properties>
+      </component>
+      <component id="a3569" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="8" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="性別："/>
+        </properties>
+      </component>
+      <vspacer id="96820">
+        <constraints>
+          <grid row="8" column="6" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </vspacer>
+      <component id="507c4" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="1" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="護照號碼："/>
+        </properties>
+      </component>
+      <component id="afcad" class="javax.swing.JTextField" binding="document_number">
+        <constraints>
+          <grid row="1" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <editable value="true"/>
+          <text value="123456789"/>
+        </properties>
+      </component>
+      <component id="d6469" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="2" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="姓名："/>
+        </properties>
+      </component>
+      <component id="40c0f" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="4" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="國家："/>
+        </properties>
+      </component>
+      <vspacer id="45155">
+        <constraints>
+          <grid row="4" column="6" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </vspacer>
+      <component id="b4e2d" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="5" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="發起國："/>
+        </properties>
+      </component>
+      <vspacer id="ddf6f">
+        <constraints>
+          <grid row="5" column="6" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </vspacer>
+      <component id="4ac55" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="2" column="8" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value=""/>
+        </properties>
+      </component>
+      <component id="1418" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value=""/>
+        </properties>
+      </component>
+      <vspacer id="b755">
+        <constraints>
+          <grid row="1" column="4" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </vspacer>
+      <component id="48015" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="0" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value=""/>
+        </properties>
+      </component>
+      <component id="91093" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="11" column="6" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value=""/>
+        </properties>
+      </component>
+      <grid id="29875" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="1" column="1" row-span="8" col-span="3" vsize-policy="3" hsize-policy="0" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="200"/>
+          </grid>
+        </constraints>
+        <properties>
+          <font size="26"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="6123" class="javax.swing.JLabel" binding="face">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value=""/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <component id="1a968" class="javax.swing.JLabel" binding="tip">
+        <constraints>
+          <grid row="10" column="1" row-span="1" col-span="5" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <enabled value="true"/>
+          <text value="讀取中，請稍候 ... ..."/>
+          <visible value="false"/>
+        </properties>
+      </component>
+      <component id="218fa" class="javax.swing.JButton" binding="upload_btn">
+        <constraints>
+          <grid row="9" column="1" row-span="1" col-span="3" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="上傳大頭照"/>
+        </properties>
+      </component>
+      <component id="1e9a9" class="javax.swing.JComboBox" binding="gender">
+        <constraints>
+          <grid row="8" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Monospaced"/>
+          <model>
+            <item value="Male"/>
+            <item value="Female"/>
+            <item value="Unknown"/>
+            <item value="Unspecified"/>
+          </model>
+        </properties>
+      </component>
+      <component id="a16de" class="javax.swing.JComboBox" binding="nationality">
+        <constraints>
+          <grid row="4" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <editable value="false"/>
+          <font name="Monospaced"/>
+          <model>
+            <item value="AUS Australia"/>
+            <item value="BRA Brazil"/>
+            <item value="CHN China"/>
+            <item value="DEU Germany"/>
+            <item value="ESP Spain"/>
+            <item value="FRA France"/>
+            <item value="GBR United Kingdom"/>
+            <item value="HKG Hong Kong"/>
+            <item value="IRL Ireland"/>
+            <item value="JPN Japan"/>
+            <item value="KEN Kenya"/>
+            <item value="LTU Lithuania"/>
+            <item value="MAC Macao"/>
+            <item value="NLD Netherlands"/>
+            <item value="POL Poland"/>
+            <item value="REU Reunion"/>
+            <item value="SGP Singapore"/>
+            <item value="SWE Sweden"/>
+            <item value="TWN Taiwan"/>
+            <item value="USA United States"/>
+            <item value="ZAF South Africa"/>
+          </model>
+        </properties>
+      </component>
+      <component id="360d8" class="javax.swing.JComboBox" binding="issuing_state">
+        <constraints>
+          <grid row="5" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <enabled value="true"/>
+          <font name="Monospaced"/>
+          <model>
+            <item value="AUS Australia"/>
+            <item value="BRA Brazil"/>
+            <item value="CHN China"/>
+            <item value="DEU Germany"/>
+            <item value="ESP Spain"/>
+            <item value="FRA France"/>
+            <item value="GBR United Kingdom"/>
+            <item value="HKG Hong Kong"/>
+            <item value="IRL Ireland"/>
+            <item value="JPN Japan"/>
+            <item value="KEN Kenya"/>
+            <item value="LTU Lithuania"/>
+            <item value="MAC Macao"/>
+            <item value="NLD Netherlands"/>
+            <item value="POL Poland"/>
+            <item value="REU Reunion"/>
+            <item value="SGP Singapore"/>
+            <item value="SWE Sweden"/>
+            <item value="TWN Taiwan"/>
+            <item value="USA United States"/>
+            <item value="ZAF South Africa"/>
+          </model>
+        </properties>
+      </component>
+      <component id="51d83" class="javax.swing.JButton" binding="write_btn">
+        <constraints>
+          <grid row="10" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="寫入"/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+</form>

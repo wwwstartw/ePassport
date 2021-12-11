@@ -7,7 +7,7 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="jmrtd" level="project" />
     <orderEntry type="library" name="net.sf.scuba.sc.j2se" level="project" />
+    <orderEntry type="library" name="jmrtd" level="project" />
   </component>
 </module>

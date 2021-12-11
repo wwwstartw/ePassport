@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="1b78f3b9-c347-4144-ab7c-3476f9d0df4e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/net_sf_scuba_sc_j2se.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ePassportApplet.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/ejbca_cvc_cert.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/jmrtd.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/junit.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/net_sf_scuba_smartcards.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/miglayout-core-javadoc.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/miglayout-core-sources.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/miglayout-core.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/miglayout-swing-javadoc.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/miglayout-swing-sources.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/miglayout-swing.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gp221/README.TXT" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gp221/gp221.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gp221/org/globalplatform/javacard/globalplatform.exp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/passportApplet/com/intellij/uiDesigner/core/AbstractLayout.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/passportApplet/com/intellij/uiDesigner/core/DimensionInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/passportApplet/com/intellij/uiDesigner/core/GridConstraints.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/passportApplet/com/intellij/uiDesigner/core/GridLayoutManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/passportApplet/com/intellij/uiDesigner/core/HorizontalInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/passportApplet/com/intellij/uiDesigner/core/LayoutState.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/passportApplet/com/intellij/uiDesigner/core/Spacer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/passportApplet/com/intellij/uiDesigner/core/SupportCode$TextWithMnemonic.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/passportApplet/com/intellij/uiDesigner/core/SupportCode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/passportApplet/com/intellij/uiDesigner/core/Util.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/passportApplet/com/intellij/uiDesigner/core/VerticalInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/passportApplet/org/jmrtd/app/util/ImageUtil$BoundedInputStream.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/passportApplet/org/jmrtd/app/util/ImageUtil$ProgressListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/passportApplet/org/jmrtd/app/util/ImageUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/passportApplet/org/jmrtd/cbeff/BiometricDataBlock.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/passportApplet/org/jmrtd/cbeff/BiometricDataBlockDecoder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/passportApplet/org/jmrtd/cbeff/BiometricDataBlockEncoder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/passportApplet/org/jmrtd/cbeff/CBEFFInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/passportApplet/org/jmrtd/cbeff/ComplexCBEFFInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/passportApplet/org/jmrtd/cbeff/ISO781611.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/passportApplet/org/jmrtd/cbeff/ISO781611Decoder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/passportApplet/org/jmrtd/cbeff/ISO781611Encoder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/passportApplet/org/jmrtd/cbeff/SimpleCBEFFInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/passportApplet/org/jmrtd/cbeff/StandardBiometricHeader.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/passportApplet/org/jmrtd/io/FragmentBuffer$Fragment.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/passportApplet/org/jmrtd/io/FragmentBuffer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/passportApplet/org/jmrtd/io/InputStreamBuffer$SubInputStream.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/passportApplet/org/jmrtd/io/InputStreamBuffer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/passportApplet/org/jmrtd/io/PositionInputStream.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/passportApplet/org/jmrtd/io/SplittableInputStream.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/passportApplet/org/jmrtd/lds/AbstractImageInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/passportApplet/org/jmrtd/lds/AbstractLDSFile.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/passportApplet/org/jmrtd/lds/AbstractLDSInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/passportApplet/org/jmrtd/lds/AbstractListInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/passportApplet/org/jmrtd/lds/CBEFFDataGroup.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/passportApplet/org/jmrtd/lds/DG2File$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/passportApplet/org/jmrtd/lds/DG2File$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/passportApplet/org/jmrtd/lds/DG2File.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/passportApplet/org/jmrtd/lds/DataGroup.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/passportApplet/org/jmrtd/lds/DisplayedImageDataGroup.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/passportApplet/org/jmrtd/lds/DisplayedImageInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/passportApplet/org/jmrtd/lds/FaceImageInfo$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/passportApplet/org/jmrtd/lds/FaceImageInfo$Expression.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/passportApplet/org/jmrtd/lds/FaceImageInfo$EyeColor$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/passportApplet/org/jmrtd/lds/FaceImageInfo$EyeColor$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/passportApplet/org/jmrtd/lds/FaceImageInfo$EyeColor$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/passportApplet/org/jmrtd/lds/FaceImageInfo$EyeColor$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/passportApplet/org/jmrtd/lds/FaceImageInfo$EyeColor$5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/passportApplet/org/jmrtd/lds/FaceImageInfo$EyeColor$6.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/passportApplet/org/jmrtd/lds/FaceImageInfo$EyeColor$7.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/passportApplet/org/jmrtd/lds/FaceImageInfo$EyeColor$8.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/passportApplet/org/jmrtd/lds/FaceImageInfo$EyeColor$9.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/passportApplet/org/jmrtd/lds/FaceImageInfo$EyeColor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/passportApplet/org/jmrtd/lds/FaceImageInfo$FaceImageType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/passportApplet/org/jmrtd/lds/FaceImageInfo$FeaturePoint.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/passportApplet/org/jmrtd/lds/FaceImageInfo$Features.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/passportApplet/org/jmrtd/lds/FaceImageInfo$HairColor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/passportApplet/org/jmrtd/lds/FaceImageInfo$ImageColorSpace.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/passportApplet/org/jmrtd/lds/FaceImageInfo$ImageDataType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/passportApplet/org/jmrtd/lds/FaceImageInfo$SourceType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/passportApplet/org/jmrtd/lds/FaceImageInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/passportApplet/org/jmrtd/lds/FaceInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/passportApplet/org/jmrtd/lds/FingerImageInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/passportApplet/org/jmrtd/lds/FingerInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/passportApplet/org/jmrtd/lds/ICAOCountry.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/passportApplet/org/jmrtd/lds/ImageInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/passportApplet/org/jmrtd/lds/LDSElement.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/passportApplet/org/jmrtd/lds/LDSFile.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/passportApplet/org/jmrtd/test/api/lds/DG2FileTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/passportApplet/org/jmrtd/test/api/lds/DisplayedImageInfoTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/passportApplet/org/jmrtd/test/api/lds/FaceImageInfoTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/passportApplet/org/jmrtd/test/api/lds/FaceInfoTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/passportApplet/org/jmrtd/test/api/lds/FileUtil$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/passportApplet/org/jmrtd/test/api/lds/FileUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/passportApplet/org/jmrtd/test/api/lds/ImageUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/passportApplet/star/DG2FileTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/passportApplet/star/WriteCard$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/passportApplet/star/WriteCard$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/passportApplet/star/WriteCard.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdks/jc304_kit/COPYRIGHT.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdks/jc304_kit/RELEASENOTES-CL.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdks/jc304_kit/Uninstaller/uninstaller.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdks/jc304_kit/api_export_files/java/io/javacard/io.exp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdks/jc304_kit/api_export_files/java/lang/javacard/lang.exp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdks/jc304_kit/api_export_files/java/rmi/javacard/rmi.exp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdks/jc304_kit/api_export_files/javacard/framework/javacard/framework.exp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdks/jc304_kit/api_export_files/javacard/framework/service/javacard/service.exp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdks/jc304_kit/api_export_files/javacard/security/javacard/security.exp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdks/jc304_kit/api_export_files/javacardx/apdu/javacard/apdu.exp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdks/jc304_kit/api_export_files/javacardx/biometry/javacard/biometry.exp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdks/jc304_kit/api_export_files/javacardx/crypto/javacard/crypto.exp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdks/jc304_kit/api_export_files/javacardx/external/javacard/external.exp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdks/jc304_kit/api_export_files/javacardx/framework/math/javacard/math.exp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdks/jc304_kit/api_export_files/javacardx/framework/string/javacard/string.exp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdks/jc304_kit/api_export_files/javacardx/framework/tlv/javacard/tlv.exp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdks/jc304_kit/api_export_files/javacardx/framework/util/intx/javacard/intx.exp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdks/jc304_kit/api_export_files/javacardx/framework/util/javacard/util.exp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdks/jc304_kit/bin/apdutool.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdks/jc304_kit/bin/capdump.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdks/jc304_kit/bin/capgen.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdks/jc304_kit/bin/converter.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdks/jc304_kit/bin/cref.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdks/jc304_kit/bin/cref_t0.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdks/jc304_kit/bin/cref_t1.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdks/jc304_kit/bin/cref_tdual.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdks/jc304_kit/bin/exp2text.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdks/jc304_kit/bin/normalizer.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdks/jc304_kit/bin/packager.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdks/jc304_kit/bin/scriptgen.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdks/jc304_kit/bin/trimmer.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdks/jc304_kit/bin/verifycap.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdks/jc304_kit/bin/verifyexp.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdks/jc304_kit/bin/verifyrev.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdks/jc304_kit/classic_simulator/api_export_files/com/sun/javacard/crypto/javacard/crypto.exp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdks/jc304_kit/classic_simulator/api_export_files/com/sun/javacard/impl/javacard/impl.exp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdks/jc304_kit/classic_simulator/api_export_files/com/sun/javacard/implBiometry/javacard/implBiometry.exp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdks/jc304_kit/classic_simulator/api_export_files/com/sun/javacard/installer/javacard/installer.exp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdks/jc304_kit/classic_simulator/api_export_files/java/io/javacard/io.exp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdks/jc304_kit/classic_simulator/api_export_files/java/lang/javacard/lang.exp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdks/jc304_kit/classic_simulator/api_export_files/java/rmi/javacard/rmi.exp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdks/jc304_kit/classic_simulator/api_export_files/javacard/framework/javacard/framework.exp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdks/jc304_kit/classic_simulator/api_export_files/javacard/framework/service/javacard/service.exp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdks/jc304_kit/classic_simulator/api_export_files/javacard/security/javacard/security.exp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdks/jc304_kit/classic_simulator/api_export_files/javacardx/apdu/javacard/apdu.exp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdks/jc304_kit/classic_simulator/api_export_files/javacardx/biometry/javacard/biometry.exp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdks/jc304_kit/classic_simulator/api_export_files/javacardx/crypto/javacard/crypto.exp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdks/jc304_kit/classic_simulator/api_export_files/javacardx/external/javacard/external.exp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdks/jc304_kit/classic_simulator/api_export_files/javacardx/framework/math/javacard/math.exp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdks/jc304_kit/classic_simulator/api_export_files/javacardx/framework/string/javacard/string.exp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdks/jc304_kit/classic_simulator/api_export_files/javacardx/framework/tlv/javacard/tlv.exp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdks/jc304_kit/classic_simulator/api_export_files/javacardx/framework/util/intx/javacard/intx.exp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdks/jc304_kit/classic_simulator/api_export_files/javacardx/framework/util/javacard/util.exp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdks/jc304_kit/classic_simulator/bin/apdutool.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdks/jc304_kit/classic_simulator/bin/cjcre.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdks/jc304_kit/classic_simulator/bin/converter.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdks/jc304_kit/classic_simulator/bin/debug.info" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdks/jc304_kit/classic_simulator/bin/debugproxy.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdks/jc304_kit/classic_simulator/bin/installer.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdks/jc304_kit/classic_simulator/bin/javacardc.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdks/jc304_kit/classic_simulator/bin/normalizer.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdks/jc304_kit/classic_simulator/bin/packager.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdks/jc304_kit/classic_simulator/lib/ant-contrib-1.0b3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdks/jc304_kit/classic_simulator/lib/api.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdks/jc304_kit/classic_simulator/lib/api_classic.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdks/jc304_kit/classic_simulator/lib/api_classic_annotations.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdks/jc304_kit/classic_simulator/lib/api_connected.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdks/jc304_kit/classic_simulator/lib/asm-all-3.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdks/jc304_kit/classic_simulator/lib/bcel-5.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdks/jc304_kit/classic_simulator/lib/commons-cli-1.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdks/jc304_kit/classic_simulator/lib/commons-codec-1.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdks/jc304_kit/classic_simulator/lib/commons-httpclient-3.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdks/jc304_kit/classic_simulator/lib/commons-logging-1.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdks/jc304_kit/classic_simulator/lib/config.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdks/jc304_kit/classic_simulator/lib/jcapt.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdks/jc304_kit/classic_simulator/lib/jctasks.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdks/jc304_kit/classic_simulator/lib/logging.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdks/jc304_kit/classic_simulator/lib/nbtasks.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdks/jc304_kit/classic_simulator/lib/nbutils.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdks/jc304_kit/classic_simulator/lib/system.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdks/jc304_kit/classic_simulator/lib/systemClasses_before_obfuscation.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdks/jc304_kit/classic_simulator/lib/tools.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdks/jc304_kit/classic_simulator/platform.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdks/jc304_kit/classic_simulator/samples/keystore/a.certificate" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdks/jc304_kit/classic_simulator/samples/keystore/a.keystore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdks/jc304_kit/classic_simulator/samples/keystore/a.privateKey" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdks/jc304_kit/classic_simulator/samples/keystore/b.certificate" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdks/jc304_kit/classic_simulator/samples/keystore/b.keystore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdks/jc304_kit/classic_simulator/samples/keystore/b.privateKey" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdks/jc304_kit/classic_simulator/samples/keystore/c.certificate" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdks/jc304_kit/classic_simulator/samples/keystore/c.keystore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdks/jc304_kit/classic_simulator/samples/keystore/c.privateKey" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdks/jc304_kit/document.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdks/jc304_kit/legal/Distribution_ReadME.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdks/jc304_kit/legal/THIRDPARTYREADME.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdks/jc304_kit/lib/JCBytecodeProfiler.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdks/jc304_kit/lib/ant-contrib-1.0b3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdks/jc304_kit/lib/api_classic.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdks/jc304_kit/lib/api_classic_annotations.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdks/jc304_kit/lib/api_connected.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdks/jc304_kit/lib/asm-all-3.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdks/jc304_kit/lib/bcel-5.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdks/jc304_kit/lib/commons-cli-1.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdks/jc304_kit/lib/commons-codec-1.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdks/jc304_kit/lib/commons-httpclient-3.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdks/jc304_kit/lib/commons-logging-1.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdks/jc304_kit/lib/jctasks.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdks/jc304_kit/lib/logging.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdks/jc304_kit/lib/tools.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdks/jc304_kit/shared/Java_clr_hori.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdks/jc304_kit/shared/Java_clr_hori_interval.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdks/jc304_kit/shared/Java_clr_hori_small.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdks/jc304_kit/shared/downicon.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdks/jc304_kit/shared/oracle.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdks/jc304_kit/shared/smallOracleLogo.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdks/jc304_kit/shared/topicon.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/jmrtd/app/util/ImageUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/jmrtd/cbeff/BiometricDataBlock.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/jmrtd/cbeff/BiometricDataBlockDecoder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/jmrtd/cbeff/BiometricDataBlockEncoder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/jmrtd/cbeff/CBEFFInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/jmrtd/cbeff/ComplexCBEFFInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/jmrtd/cbeff/ISO781611.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/jmrtd/cbeff/ISO781611Decoder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/jmrtd/cbeff/ISO781611Encoder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/jmrtd/cbeff/SimpleCBEFFInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/jmrtd/cbeff/StandardBiometricHeader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/jmrtd/io/FragmentBuffer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/jmrtd/io/InputStreamBuffer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/jmrtd/io/PositionInputStream.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/jmrtd/io/SplittableInputStream.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/jmrtd/lds/AbstractImageInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/jmrtd/lds/AbstractLDSFile.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/jmrtd/lds/AbstractLDSInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/jmrtd/lds/AbstractListInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/jmrtd/lds/CBEFFDataGroup.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/jmrtd/lds/DataGroup.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/jmrtd/lds/DisplayedImageDataGroup.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/jmrtd/lds/DisplayedImageInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/jmrtd/lds/FaceInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/jmrtd/lds/FaceInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/jmrtd/lds/FingerImageInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/jmrtd/lds/FingerInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/jmrtd/lds/ICAOCountry.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/jmrtd/lds/ImageInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/jmrtd/lds/LDSElement.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/jmrtd/lds/LDSFile.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/jmrtd/test/api/lds/DG2FileTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/jmrtd/test/api/lds/DisplayedImageInfoTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/jmrtd/test/api/lds/FaceImageInfoTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/jmrtd/test/api/lds/FaceInfoTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/jmrtd/test/api/lds/FileUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/jmrtd/test/api/lds/ImageUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/star/DG2FileTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/star/WriteCard.form" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/star/WriteCard.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ePassportReader/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ePassportReader/.idea/libraries/jmrtd.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ePassportReader/.idea/libraries/net_sf_scuba_sc_j2se.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ePassportReader/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ePassportReader/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ePassportReader/ePassportReader.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../ePassportReader/ePassportReader.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ePassportReader/out/production/ePassportReader/ImagePreviewPanel$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ePassportReader/out/production/ePassportReader/ImagePreviewPanel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ePassportReader/out/production/ePassportReader/Reader$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ePassportReader/out/production/ePassportReader/Reader$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ePassportReader/out/production/ePassportReader/Reader$ReadMRZ.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ePassportReader/out/production/ePassportReader/Reader$ReadMRZ.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ePassportReader/out/production/ePassportReader/Reader.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ePassportReader/out/production/ePassportReader/Reader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ePassportReader/out/production/ePassportReader/util/ImageUtil$BoundedInputStream.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ePassportReader/out/production/ePassportReader/util/ImageUtil$BoundedInputStream.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ePassportReader/out/production/ePassportReader/util/ImageUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ePassportReader/out/production/ePassportReader/util/ImageUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ePassportReader/src/ImagePreviewPanel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ePassportReader/src/Reader.form" beforeDir="false" afterPath="$PROJECT_DIR$/../ePassportReader/src/Reader.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ePassportReader/src/Reader.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ePassportReader/src/Reader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ePassportReader/src/util/FileUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ePassportReader/src/util/FileUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ePassportReader/src/util/IconUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ePassportReader/src/util/IconUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ePassportReader/src/util/ImageUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ePassportReader/src/util/ImageUtil.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="228DR6VfEKPCNKM6zq7reEL0lUL" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.4632184" />
+  </component>
+  <component name="RunManager">
+    <configuration name="WriteCard" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="WriteCard" />
+      <module name="ePassportApplet" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.WriteCard" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1b78f3b9-c347-4144-ab7c-3476f9d0df4e" name="Changes" comment="" />
+      <created>1639210309503</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1639210309503</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+</project>

@@ -2,15 +2,10 @@ import javax.smartcardio.CardException;
 import javax.smartcardio.CardTerminal;
 import javax.smartcardio.TerminalFactory;
 import javax.swing.*;
-import javax.swing.filechooser.FileNameExtensionFilter;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.awt.geom.AffineTransform;
 import java.awt.image.BufferedImage;
-import java.awt.image.ColorModel;
-import java.awt.image.RenderedImage;
-import java.awt.image.WritableRaster;
 import java.io.*;
 import java.util.*;
 import java.util.List;
@@ -50,7 +45,6 @@ public class Reader {
     private JTextField BAC_birth;
     private JTextField BAC_expiry;
     static Map<String, String> country_dict = new HashMap<String, String>();
-    private ImagePreviewPanel displayPreviewPanel;
 
     public static void main(String[] args) {
         JFrame frame = new JFrame("ePassport Reader");
@@ -80,34 +74,6 @@ public class Reader {
         country_dict.put("TWN", "Taiwan");
         country_dict.put("USA", "United States");
         country_dict.put("ZAF", "South Africa");
-    }
-
-    public BufferedImage convertRenderedImage(RenderedImage img) {
-        if (img instanceof BufferedImage) {
-            return (BufferedImage)img;
-        }
-        ColorModel cm = img.getColorModel();
-        int width = img.getWidth();
-        int height = img.getHeight();
-        WritableRaster raster = cm.createCompatibleWritableRaster(width, height);
-        boolean isAlphaPremultiplied = cm.isAlphaPremultiplied();
-        Hashtable properties = new Hashtable();
-        String[] keys = img.getPropertyNames();
-        if (keys!=null) {
-            for (int i = 0; i < keys.length; i++) {
-                properties.put(keys[i], img.getProperty(keys[i]));
-            }
-        }
-        BufferedImage result = new BufferedImage(cm, raster, isAlphaPremultiplied, properties);
-        img.copyData(raster);
-        return result;
-    }
-
-    private double calculateScale(int desiredWidth, int desiredHeight, int actualWidth, int actualHeight) {
-        double xScale = (double)desiredWidth / (double)actualWidth;
-        double yScale = (double)desiredHeight / (double)actualHeight;
-        double scale = xScale < yScale ? xScale : yScale;
-        return scale;
     }
 
     public class ReadMRZ extends JPanel {
