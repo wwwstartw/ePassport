@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="lib">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/cert-cvc-1.4.6.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/bcprov-jdk15on-1.60.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jmrtd-0.7.5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/scuba-smartcards-0.0.18.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/scuba-smartcards-0.0.19.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/scuba-sc-j2se-0.0.20.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
