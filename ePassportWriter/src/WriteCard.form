@@ -28,7 +28,7 @@
           </grid>
         </constraints>
         <properties>
-          <text value="Star Li"/>
+          <text value=""/>
         </properties>
       </component>
       <component id="f2c84" class="javax.swing.JLabel">
@@ -51,7 +51,7 @@
           </grid>
         </constraints>
         <properties>
-          <text value="A123456789"/>
+          <text value=""/>
         </properties>
       </component>
       <component id="89ad1" class="javax.swing.JLabel">
@@ -74,7 +74,7 @@
           </grid>
         </constraints>
         <properties>
-          <text value="980928"/>
+          <text value=""/>
         </properties>
       </component>
       <component id="1e14e" class="javax.swing.JLabel">
@@ -97,7 +97,7 @@
           </grid>
         </constraints>
         <properties>
-          <text value="990928"/>
+          <text value=""/>
         </properties>
       </component>
       <component id="a3569" class="javax.swing.JLabel">
@@ -129,7 +129,7 @@
         </constraints>
         <properties>
           <editable value="true"/>
-          <text value="123456789"/>
+          <text value=""/>
         </properties>
       </component>
       <component id="d6469" class="javax.swing.JLabel">

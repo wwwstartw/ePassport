@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/ePassportApplet.iml" filepath="$PROJECT_DIR$/ePassportApplet.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ePassportWriter.iml" filepath="$PROJECT_DIR$/ePassportWriter.iml" />
     </modules>
   </component>
 </project>

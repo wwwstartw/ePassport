@@ -268,7 +268,7 @@
           </grid>
         </constraints>
         <properties>
-          <text value="123456789"/>
+          <text value=""/>
         </properties>
       </component>
       <component id="3feef" class="javax.swing.JSeparator">
@@ -301,7 +301,7 @@
           </grid>
         </constraints>
         <properties>
-          <text value="980928"/>
+          <text value=""/>
         </properties>
       </component>
       <component id="67324" class="javax.swing.JLabel">
@@ -319,7 +319,7 @@
           </grid>
         </constraints>
         <properties>
-          <text value="990928"/>
+          <text value=""/>
         </properties>
       </component>
       <component id="59b80" class="javax.swing.JLabel">
