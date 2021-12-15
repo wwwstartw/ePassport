@@ -1,20 +1,20 @@
 # ePassport
-- 此專案皆以 `IntelliJ` 開發
+- 具備讀取及寫入電子護照之功能，此專案皆以 `IntelliJ` 開發
 ## ePassportApplet (安裝Applet工具)
-利用 Gradle Script 安裝 ePassport Applet，點擊右方 `installJavaCard`:
+寫卡前需利用 Gradle Script 安裝 ePassport Applet，點擊右方 `installJavaCard`:
 ![](./images/Gradle.png)
 ## ePassportWriter App (寫卡)
 ### 寫入白卡
-- 直接執行 WriterCard.java ，輸入資料後上傳大頭照，最後點擊寫入按鈕，成功寫入 ePassport: 
+- 執行 WriterCard.java ，輸入資料後上傳大頭照，最後點擊寫入按鈕，成功寫入 ePassport: 
   - ![](./images/writecard_1.png)
 ## ePassportReader App (讀卡)
 ### 讀取白卡
-- 直接執行 Reader.java ，輸入BAC key後，點擊讀取按鈕，成功讀取 ePassport:
+- 執行 Reader.java ，輸入BAC key後，點擊讀取按鈕，成功讀取 ePassport:
   - ![](./images/lab_ePassportReader.png)
 ### 讀取真實護照
-- 直接執行 Reader.java ，輸入BAC key後，點擊讀取按鈕，成功讀取 ePassport: 
+- 執行 Reader.java ，輸入BAC key後，點擊讀取按鈕，成功讀取 ePassport: 
   - ![](./images/passport_reader.png)
-## JMRTD App
+## JMRTD App 寫卡
 ### 步驟
 0. 必須先使用 ePassportApplet 執行 installJavaCard ，才可使用 ePassport Tool 寫護照
 1. 安裝 `jmrtd_installer-0.4.9.exe`，安裝過程會有當機現象，直接退出即可
