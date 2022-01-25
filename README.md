@@ -8,7 +8,7 @@
 - 執行 WriterCard.java ，輸入資料後上傳大頭照，最後點擊寫入按鈕，成功寫入 ePassport: 
   - ![](./images/normal_write.png)
 ### 寫入 SQL injection 指令
-- 執行 WriterCard.java ，於姓氏欄中輸入SQLi指令，最後點擊寫入按鈕，成功寫入 ePassport: 
+- 執行 WriterCard.java ，於姓氏欄中輸入SQLi指令 `' or 1=1-- `，最後點擊寫入按鈕，成功寫入 ePassport: 
   - ![](./images/SQLi_write.png)
 ## ePassportReader App (讀卡)
 ### 讀取白卡
