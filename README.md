@@ -6,14 +6,29 @@
 ## ePassportWriter App (寫卡)
 ### 寫入白卡
 - 執行 WriterCard.java ，輸入資料後上傳大頭照，最後點擊寫入按鈕，成功寫入 ePassport: 
-  - ![](./images/writecard_1.png)
+  - ![](./images/normal_write.png)
+### 寫入 SQL injection 指令
+- 執行 WriterCard.java ，於姓氏欄中輸入SQLi指令，最後點擊寫入按鈕，成功寫入 ePassport: 
+  - ![](./images/SQLi_write.png)
 ## ePassportReader App (讀卡)
 ### 讀取白卡
 - 執行 Reader.java ，輸入BAC key後，點擊讀取按鈕，成功讀取 ePassport:
-  - ![](./images/lab_ePassportReader.png)
+  - ![](./images/normal_read.png)
 ### 讀取真實護照
 - 執行 Reader.java ，輸入BAC key後，點擊讀取按鈕，成功讀取 ePassport: 
   - ![](./images/passport_reader.png)
+### 驗卡
+- 建立資料庫，預先存放合格的使用者資料
+  - ![](./images/SQLi_database.png)
+- 執行 Reader.java ，輸入BAC key後，點擊讀取按鈕，成功讀取 ePassport:
+  - ![](./images/fake_read.png)
+- 讀取成功後，點擊出現的驗卡按鈕，由於該姓名與資料庫中資料不吻合，結果為驗卡失敗:
+  - ![](./images/fake_verify.png)
+#### 繞過驗卡 (利用 SQL injection)
+- 執行 Reader.java ，輸入BAC key後，點擊讀取按鈕，讀取完成後可於姓氏欄中發現 SQL 指令:
+  - ![](./images/SQLi_read.png)
+- 點擊出驗卡按鈕，雖然姓名與資料庫中不吻合，但由於 SQL injection 攻擊成功，結果為驗卡成功:
+  - ![](./images/SQLi_verify.png)
 ## JMRTD App 寫卡
 ### 步驟
 0. 必須先使用 ePassportApplet 執行 installJavaCard ，才可使用 ePassport Tool 寫護照

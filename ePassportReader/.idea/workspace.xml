@@ -1,74 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="25de3cba-dd23-49d5-8d9c-dc9b762487e2" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ePassportApplet/.idea/libraries/jmrtd.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ePassportApplet/.idea/libraries/net_sf_scuba_sc_j2se.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ePassportApplet/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ePassportApplet/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ePassportApplet/.idea/runConfigurations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ePassportApplet/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ePassportApplet/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ePassportApplet/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ePassportApplet/build/libs/ePassportApplet-1.0-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ePassportApplet/build/tmp/jar/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ePassportApplet/ePassportApplet.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ePassportApplet/out/production/ePassportApplet/WriteCard$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ePassportApplet/out/production/ePassportApplet/WriteCard$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ePassportApplet/out/production/ePassportApplet/WriteCard.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ePassportApplet/out/production/ePassportApplet/com/intellij/uiDesigner/core/AbstractLayout.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ePassportApplet/out/production/ePassportApplet/com/intellij/uiDesigner/core/DimensionInfo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ePassportApplet/out/production/ePassportApplet/com/intellij/uiDesigner/core/GridConstraints.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ePassportApplet/out/production/ePassportApplet/com/intellij/uiDesigner/core/GridLayoutManager.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ePassportApplet/out/production/ePassportApplet/com/intellij/uiDesigner/core/HorizontalInfo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ePassportApplet/out/production/ePassportApplet/com/intellij/uiDesigner/core/LayoutState.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ePassportApplet/out/production/ePassportApplet/com/intellij/uiDesigner/core/Spacer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ePassportApplet/out/production/ePassportApplet/com/intellij/uiDesigner/core/SupportCode$TextWithMnemonic.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ePassportApplet/out/production/ePassportApplet/com/intellij/uiDesigner/core/SupportCode.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ePassportApplet/out/production/ePassportApplet/com/intellij/uiDesigner/core/Util.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ePassportApplet/out/production/ePassportApplet/com/intellij/uiDesigner/core/VerticalInfo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ePassportApplet/out/production/ePassportApplet/org/jmrtd/lds/DG2File$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ePassportApplet/out/production/ePassportApplet/org/jmrtd/lds/DG2File$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ePassportApplet/out/production/ePassportApplet/org/jmrtd/lds/DG2File.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ePassportApplet/out/production/ePassportApplet/org/jmrtd/lds/FaceImageInfo$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ePassportApplet/out/production/ePassportApplet/org/jmrtd/lds/FaceImageInfo$Expression.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ePassportApplet/out/production/ePassportApplet/org/jmrtd/lds/FaceImageInfo$EyeColor$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ePassportApplet/out/production/ePassportApplet/org/jmrtd/lds/FaceImageInfo$EyeColor$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ePassportApplet/out/production/ePassportApplet/org/jmrtd/lds/FaceImageInfo$EyeColor$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ePassportApplet/out/production/ePassportApplet/org/jmrtd/lds/FaceImageInfo$EyeColor$4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ePassportApplet/out/production/ePassportApplet/org/jmrtd/lds/FaceImageInfo$EyeColor$5.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ePassportApplet/out/production/ePassportApplet/org/jmrtd/lds/FaceImageInfo$EyeColor$6.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ePassportApplet/out/production/ePassportApplet/org/jmrtd/lds/FaceImageInfo$EyeColor$7.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ePassportApplet/out/production/ePassportApplet/org/jmrtd/lds/FaceImageInfo$EyeColor$8.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ePassportApplet/out/production/ePassportApplet/org/jmrtd/lds/FaceImageInfo$EyeColor$9.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ePassportApplet/out/production/ePassportApplet/org/jmrtd/lds/FaceImageInfo$EyeColor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ePassportApplet/out/production/ePassportApplet/org/jmrtd/lds/FaceImageInfo$FaceImageType.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ePassportApplet/out/production/ePassportApplet/org/jmrtd/lds/FaceImageInfo$FeaturePoint.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ePassportApplet/out/production/ePassportApplet/org/jmrtd/lds/FaceImageInfo$Features.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ePassportApplet/out/production/ePassportApplet/org/jmrtd/lds/FaceImageInfo$HairColor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ePassportApplet/out/production/ePassportApplet/org/jmrtd/lds/FaceImageInfo$ImageColorSpace.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ePassportApplet/out/production/ePassportApplet/org/jmrtd/lds/FaceImageInfo$ImageDataType.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ePassportApplet/out/production/ePassportApplet/org/jmrtd/lds/FaceImageInfo$SourceType.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ePassportApplet/out/production/ePassportApplet/org/jmrtd/lds/FaceImageInfo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ePassportApplet/out/production/ePassportApplet/org/jmrtd/lds/FaceInfo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ePassportApplet/src/WriteCard.form" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ePassportApplet/src/WriteCard.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ePassportApplet/src/org/jmrtd/lds/DG2File.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ePassportApplet/src/org/jmrtd/lds/FaceImageInfo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ePassportApplet/src/org/jmrtd/lds/FaceInfo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Reader.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/Reader.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../images/lab_ePassportReader.png" beforeDir="false" afterPath="$PROJECT_DIR$/../images/lab_ePassportReader.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../images/passport_reader.png" beforeDir="false" afterPath="$PROJECT_DIR$/../images/passport_reader.png" afterDir="false" />
-    </list>
+    <list default="true" id="25de3cba-dd23-49d5-8d9c-dc9b762487e2" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="ProjectId" id="228FDc8lJvRvMgXohyx6LO0XkWJ" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -80,9 +35,19 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/PassportAppletWithGradlePlugin-master/JavaCardApplet" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/mysql-connector-java-8.0.27/mysql-connector-java-8.0.27.jar" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.4632184" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Reader">
+    <configuration name="DBConnection" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="DBConnection" />
+      <module name="ePassportReader" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Reader" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Reader" />
       <module name="ePassportReader" />
@@ -93,6 +58,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Reader" />
+        <item itemvalue="Application.DBConnection" />
       </list>
     </recent_temporary>
   </component>

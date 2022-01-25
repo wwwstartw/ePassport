@@ -9,7 +9,11 @@ import java.awt.image.BufferedImage;
 import java.io.*;
 import java.util.*;
 import java.util.List;
+import java.sql.*;
+import java.util.Scanner;
+import java.util.logging.*;
 
+import com.sun.xml.internal.ws.api.model.wsdl.WSDLOutput;
 import net.sf.scuba.smartcards.CardService;
 import net.sf.scuba.smartcards.CardServiceException;
 import org.jmrtd.BACKey;
@@ -21,6 +25,7 @@ import org.jmrtd.lds.icao.MRZInfo;
 import org.jmrtd.lds.iso19794.FaceImageInfo;
 import org.jmrtd.lds.iso19794.FaceInfo;
 import org.jmrtd.protocol.BACResult;
+import sun.rmi.runtime.Log;
 import util.IconUtil;
 import util.ImageUtil;
 
@@ -29,7 +34,7 @@ import static com.sun.javafx.iio.common.ImageTools.scaleImage;
 public class Reader {
     public JTextField document_number;
     public JButton read_button;
-    private JTextField name;
+    private JTextField fname;
     private JTextField personal_number;
     private JTextField birth_date;
     private JTextField expiry_date;
@@ -44,6 +49,8 @@ public class Reader {
     private JTextField BAC_doc;
     private JTextField BAC_birth;
     private JTextField BAC_expiry;
+    private JButton verify_button;
+    private JTextField lname;
     static Map<String, String> country_dict = new HashMap<String, String>();
 
     public static void main(String[] args) {
@@ -83,7 +90,7 @@ public class Reader {
         static final boolean SHOULD_CHECK_MAC = false;
         private int width, height;
 
-        public MRZInfo ReadMRZ(String[] args)throws CardServiceException, CardException, IOException {
+        public MRZInfo ReadMRZ(String[] args) {
             // do bac
             MRZInfo mrzInfo = null;
             try {
@@ -119,42 +126,69 @@ public class Reader {
                 }
                 ps.close();
             } catch (Exception e) {
-                if (e.getMessage().contains("6982")) {
-                    JOptionPane.showMessageDialog(null,"讀取失敗! 請確認BAC key是否正確或重新感應卡片!","Error",JOptionPane.WARNING_MESSAGE);
-                }else{
-                    System.out.println(e);
-                    JOptionPane.showMessageDialog(null,"讀取成功!");
-                }
+                System.out.println(e);
             }
             return mrzInfo;
         }
     }
 
+    public void readCard(JButton button) {
+        String[] args = {};
+        ReadMRZ Reader = new ReadMRZ();
+        MRZInfo mrzInfo = null;
+        try {
+            mrzInfo = Reader.ReadMRZ(args);
+        } catch (Exception e) {
+            System.out.println(e);
+        }
+        try {
+            document_number.setText(mrzInfo.getDocumentNumber());
+            fname.setText(mrzInfo.getPrimaryIdentifier());
+            lname.setText(mrzInfo.getSecondaryIdentifier().replace("<",""));
+            personal_number.setText(mrzInfo.getPersonalNumber());
+            birth_date.setText(mrzInfo.getDateOfBirth());
+            expiry_date.setText(mrzInfo.getDateOfExpiry());
+            gender.setText(String.valueOf(mrzInfo.getGender()));
+            nationality.setText(country_dict.get(mrzInfo.getNationality()));
+            issuing_state.setText(country_dict.get(mrzInfo.getIssuingState()));
+            mrztext.setText(String.valueOf(mrzInfo));
+            JOptionPane.showMessageDialog(null,"讀取成功!");
+            verify_button.setVisible(true);
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(null,"讀取失敗! 請確認 BAC 是否正確或重新感應卡片!","Error",JOptionPane.WARNING_MESSAGE);
+        }
+    }
+
+    public void verifyCard(JButton button) {
+        final String sql = "SELECT doc_id, fname, lname, gender, birthday, expire FROM User WHERE fname='" + fname.getText() +
+                "' and lname='" + lname.getText() + "';";
+        try (	Connection connection = DBConnection.getConnection();
+                 Statement stmt = connection.createStatement();
+                 ResultSet rs = stmt.executeQuery(sql);
+        ){
+            int i = 0;
+            while(rs.next()) {
+                i += 1;
+                break;
+            }
+            if (i < 1) {
+                JOptionPane.showMessageDialog(null, "驗卡失敗! 該使用者不存在於合法電子護照資料庫中!", "Error", JOptionPane.WARNING_MESSAGE);
+            }else{
+                JOptionPane.showMessageDialog(null,"驗卡成功!");
+            }
+        } catch (Exception exception) {
+            JOptionPane.showMessageDialog(null,"驗卡失敗! 該使用者不存在於合法電子護照資料庫中!","Error",JOptionPane.WARNING_MESSAGE);
+        }
+    }
+
     public Reader() {
         read_button.addActionListener(new ActionListener() {
-            String[] args = {};
-            public void actionPerformed(ActionEvent e) {
-                ReadMRZ Reader = new ReadMRZ();
-                MRZInfo mrzInfo = null;
-                try {
-                    mrzInfo = Reader.ReadMRZ(args);
-                } catch (CardServiceException ex) {
-                    ex.printStackTrace();
-                } catch (CardException ex) {
-                    ex.printStackTrace();
-                } catch (IOException ex) {
-                    ex.printStackTrace();
-                }
-                document_number.setText(mrzInfo.getDocumentNumber());
-                name.setText(mrzInfo.getPrimaryIdentifier() + " " + mrzInfo.getSecondaryIdentifier().replace("<",""));
-                personal_number.setText(mrzInfo.getPersonalNumber());
-                birth_date.setText(mrzInfo.getDateOfBirth());
-                expiry_date.setText(mrzInfo.getDateOfExpiry());
-                gender.setText(String.valueOf(mrzInfo.getGender()));
-                nationality.setText(country_dict.get(mrzInfo.getNationality()));
-                issuing_state.setText(country_dict.get(mrzInfo.getIssuingState()));
-                mrztext.setText(String.valueOf(mrzInfo));
-            }
+            @Override
+            public void actionPerformed(ActionEvent e) {readCard(read_button);}
+        });
+        verify_button.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) { verifyCard(verify_button);}
         });
     }
 }

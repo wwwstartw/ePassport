@@ -28,7 +28,7 @@ public class WriteCard {
 
     public JTextField document_number;
     public JButton write_btn;
-    private JTextField name;
+    private JTextField fname;
     private JTextField personal_number;
     private JTextField birth_date;
     private JTextField expiry_date;
@@ -39,6 +39,7 @@ public class WriteCard {
     private JLabel face;
     private JButton upload_btn;
     private JLabel tip;
+    private JTextField lname;
     public String image_apdu, mrztext, dg1_binary;
 
 
@@ -157,8 +158,8 @@ public class WriteCard {
             doc_number_hex = toHexadecimal(document_number.getText());
             birth_hex = toHexadecimal(birth_date.getText());
             expire_hex = toHexadecimal(expiry_date.getText());
-            fname_hex = toHexadecimal((name.getText().split(" ")[0]));
-            lname_hex = toHexadecimal((name.getText().split(" ")[1]));
+            fname_hex = toHexadecimal(fname.getText());
+            lname_hex = toHexadecimal(lname.getText());
             nationality_hex = toHexadecimal(nationality.getSelectedItem().toString().split(" ")[0]);
             issue_hex = toHexadecimal(issuing_state.getSelectedItem().toString().split(" ")[0]);
             if (gender.getSelectedItem().toString().substring(0,1) == "U") {
@@ -170,8 +171,8 @@ public class WriteCard {
 
             mrztext = "00da00621d401bc009" + doc_number_hex + "c106" + birth_hex + "c206" + expire_hex;
             dg1_binary = "00D600005D615B5F1F58503C" + issue_hex +
-                    fname_hex + new String(new char[(20-fname_hex.length())/2]).replace("\0", "3C") +
-                    lname_hex + new String(new char[(62-name.getText().length())/2]).replace("\0", "3C") +
+                    fname_hex + new String(new char[(10-fname.getText().length())]).replace("\0", "3C") +
+                    lname_hex + new String(new char[(29-lname.getText().length())]).replace("\0", "3C") +
                     doc_number_hex + "37" + nationality_hex + birth_hex + "34" + gender_hex + expire_hex + "37" + personal_hex + "3C3C3C3C3738";
 
             sendAPDU();
@@ -292,6 +293,7 @@ public class WriteCard {
                 JOptionPane.showMessageDialog(null,"寫入成功!");
             }
         } catch (Exception e) {
+            System.out.println(e);
             JOptionPane.showMessageDialog(null,"寫入失敗!","Error",JOptionPane.WARNING_MESSAGE);
         }
     }
